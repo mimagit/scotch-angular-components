@@ -16,7 +16,7 @@
         },
         
         // Accordion-panel template
-        template: '<div class="panel panel-default"><div class="panel-heading" ng-click="$ctrl.select()"><h3 class="panel-title">{{$ctrl.heading}}</h3>      </div><div class="panel-body" ng-transclude ng-if="$ctrl.selected"></div>      </div>',
+        templateUrl:  'js/accordion/accordion-panel.template.html',
         
         controller: AccordionPanelController
     });

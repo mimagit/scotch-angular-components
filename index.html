@@ -14,6 +14,7 @@
     
     <!-- The main app module -->
     <script src="js/app.module.js"></script>
+    <script src="js/app.config.js"></script>
     
     <!-- menu-bar -->
     <script src="js/menu-bar/menu-bar.module.js"></script>
@@ -30,25 +31,42 @@
     <!-- accordion-panel -->
     <script src="js/accordion/accordion-panel.module.js"></script>
     <script src="js/accordion/accordion-panel.component.js"></script>
+    
+    <!-- tabs test -->
+    <script src="js/tabs-test/tabs-test.js"></script>
 </head>
 
 <body>
     <menu-bar brand="Brand"></menu-bar>    
     
     <user-list name="'Users Table'"></user-list>
+        
     
     <div class="container">
         <accordion>
             <!--The first panel with heading 1-->
-            <accordion-panel heading="heading 1">
+            <accordion-panel heading="Heading 1">
                 This a panel
             </accordion-panel>
             <!--The secoind panel with heading 2-->
             <accordion-panel heading="Heading 2">
-                this is another panel
+                This is another panel
             </accordion-panel>
         </accordion>
     </div>
+    
+    <my-tabs>
+        <my-pane title="Hello">
+            <h4>Hello</h4>
+            <p>Lorem ipsum dolor sit amet</p>
+        </my-pane>
+        <my-pane title="World">
+            <h4>World</h4>
+            <em>Mauris elementum elementum enim at suscipit.</em>
+            <p><a href ng-click="i = i + 1">counter: {{i || 0}}</a></p>
+        </my-pane>
+    </my-tabs>
+    
 </body>
 
 </html>

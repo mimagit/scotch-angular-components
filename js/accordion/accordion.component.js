@@ -3,7 +3,7 @@
     
     angular.module('accordion').component('accordion', {
         transclude: true,
-        template: '<div class="panel-group" ng-transclude></div>',
+        templateUrl: 'js/accordion/accordion.template.html',
         controller: AccordionController
     });
     
