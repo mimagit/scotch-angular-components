@@ -3,19 +3,30 @@
 
 <head>
   <title>Getting started with Angular 1.5.x components</title>
-  <!-- bootsrap css-->
-  <link rel="stylesheet" type="text/css" href="lib/bootstrap/dist/css/bootstrap.min.css">
-  <!-- angularjs-->
-  <script src="lib/angular/angular.min.js"></script>
-  <!-- The main app module -->
-  <script src="js/app.module.js"></script>
-  <!-- components -->
+    
+    <!-- bootsrap css-->
+    <link rel="stylesheet" type="text/css" href="lib/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css" />
+    
+    <!-- angularjs-->
+    <script src="lib/angular/angular.min.js"></script>
+    
+    <!-- The main app module -->
+    <script src="js/app.module.js"></script>
+    
+    <!-- menu-bar -->
     <script src="js/menu-bar/menu-bar.module.js"></script>
     <script src="js/menu-bar/menu-bar.component.js"></script>
+    
+    <!-- user-list -->
+    <script src="js/user-list/user-list.module.js"></script>
+    <script src="js/user-list/user-list.component.js"></script>
 </head>
 
 <body>
     <menu-bar brand="Brand"></menu-bar>    
+    
+    <user-list name="'Users Table'"></user-list>
 </body>
 
 </html>
