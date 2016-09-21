@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html en="us" ng-app="app">
+<html en="us" ng-app="myApp">
 
 <head>
   <title>Getting started with Angular 1.5.x components</title>
@@ -7,15 +7,15 @@
   <link rel="stylesheet" type="text/css" href="lib/bootstrap/dist/css/bootstrap.min.css">
   <!-- angularjs-->
   <script src="lib/angular/angular.min.js"></script>
-  <!-- The main app script-->
-  <script src="js/app.js"></script>
+  <!-- The main app module -->
+  <script src="js/app.module.js"></script>
   <!-- components -->
+    <script src="js/menu-bar/menu-bar.module.js"></script>
+    <script src="js/menu-bar/menu-bar.component.js"></script>
 </head>
 
 <body>
-    <div class="container" ng-controller="HomeCtrl as $ctrl">
-        <h1>{{$ctrl.message}} </h1>
-    </div>
+    <menu-bar brand="Brand"></menu-bar>    
 </body>
 
 </html>
