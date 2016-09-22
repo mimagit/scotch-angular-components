@@ -1,4 +1,4 @@
 'use strict'
 
 // Define the 'myApp' module
-angular.module('myApp', ['ngRoute', 'menuBar', 'userList', 'accordion']);
+angular.module('myApp', ['ngRoute', 'menuBar', 'userList', 'accordion', 'nameTest']);

@@ -1,3 +1,5 @@
+// https://docs.angularjs.org/guide/component#intercomponent-communication
+
 angular.module('myApp')
 .component('myTabs', {
   transclude: true,
